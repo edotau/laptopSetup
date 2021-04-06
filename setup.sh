@@ -33,4 +33,3 @@ source ~/.bash_profile
 #echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> /Users/ericau/.bash_profile
 #export LDFLAGS="-L/usr/local/opt/python@3.7/lib"
 
-
