@@ -29,7 +29,7 @@ echo 'export TERM=xterm-256color' >> ~/.bash_profile
 # Set paths for kentUtils and conda bin
 echo 'export PATH=~/miniconda3/bin:$PATH:~/bin/kentUtils' >> ~/.bash_profile
 
-conda create -n genomics -c bioconda python=3.7 airflow=2.0.1 trim-galore=0.6.6 bwa samtools=1.12 minimap2 bcftools freebayes multiqc picard=2.25.1
+conda create -n genomics -c bioconda setuptools python=3.7 airflow=2.0.1 trim-galore=0.6.6 bwa samtools=1.12 minimap2 bcftools freebayes multiqc picard=2.25.1
 
 source ~/.bash_profile
 
