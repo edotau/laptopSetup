@@ -4,6 +4,9 @@ set -e
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install wget
 brew install gcc
+brew install python@3.7
+echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> /Users/ericau/.bash_profile
+export LDFLAGS="-L/usr/local/opt/python@3.7/lib"
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 chmod +x Miniconda3-latest-MacOSX-x86_64.sh
@@ -29,7 +32,4 @@ echo 'export PATH=~/miniconda3/bin:$PATH:~/bin/kentUtils' >> ~/.bash_profile
 conda create -n genomics -c bioconda python=3.7 airflow=2.0.1 trim-galore=0.6.6 bwa samtools=1.12 minimap2 bcftools freebayes multiqc picard=2.25.1
 
 source ~/.bash_profile
-
-#echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> /Users/ericau/.bash_profile
-#export LDFLAGS="-L/usr/local/opt/python@3.7/lib"
 
