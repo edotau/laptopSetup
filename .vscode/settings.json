@@ -26,7 +26,6 @@
         "terminal.external.osxExec",
     ],
     "terminal.integrated.inheritEnv": false,
-    "editor.minimap.enabled": false,
     "explorer.openEditors.visible": 0,
     "breadcrumbs.enabled": false,
     "workbench.preferredDarkColorTheme": "Monokai",
@@ -60,8 +59,6 @@
     "workbench.editor.centeredLayoutAutoResize": false,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.copyOnSelection": true,
-    // Should copy the selected text when it was selected using the keyboard?
-    "copyOnSelect.copyOnKeyboardSelection": false,
     // Should copy the selected text when it was selected using the mouse?
     "copyOnSelect.copyOnMouseSelection": true,
     // Should trim the start of the copied text?
@@ -80,4 +77,5 @@
     "window.zoomLevel": 1,
     "workbench.editor.enablePreviewFromCodeNavigation": true,
     "window.openWithoutArgumentsInNewWindow": "on",
+    "editor.renderWhitespace": "none",
 }
