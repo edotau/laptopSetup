@@ -38,9 +38,12 @@ fetchUpdate() {
     local last=
     local fetch=
     if hash "wget" 2>/dev/null; then
-	fetch="wget -qO-"
+	    fetch="wget -qO-"
     elif hash "curl" 2>/dev/null; then
-	fetch="curl --silent"
+	    fetch="curl --silent"
+    else
+        echo "Error: local wget and/or curl is not functional..."
+        exit 3
     fi
     last=$(queryReleaseList "$fetch" | tail -1)
     if echo "$last" | grep -q -E '[0-9]\.[0-9]+(\.[0-9]+)?'; then
@@ -96,25 +99,4 @@ fi
 
 cd $gonomics
 go test ./...
-
-##
-####if [ $(uname -s | tr "[:upper:]" "[:lower:]") == "darwin" ]; then
-    # Mac OS X platform
-    ####wget https://golang.org/dl/go1.16.3.darwin-amd64.pkg
-
-    ####installer -pkg *go*darwin-amd64.pkg -target /usr/local/
-    # Need to figure out how to handle this better, but there is a race condition here
-    # Script goes on even thought golang isn't done installing
-    ####sleep 7
-    # clean up
-    ####rm *go*darwin-amd64.pkg
-####elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    # GNU/Linux match
-    ####wget  https://golang.org/dl/go1.16.3.src.tar.gz
-    ####tar xf *go*.src.tar.gz
-    ####rm *go*.src.tar.gz
-####else
-    # Do something under 64 bits Windows
-  ####  echo 'Apologies, only MacOS and Linux systems can be automated for the time being...'
-####fi
-####
+go install ./...
