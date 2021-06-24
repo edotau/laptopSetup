@@ -1,26 +1,11 @@
 {
-    "workbench.colorTheme": "Monokai",
-    "mssql.connections": [
-        {
-            "server": "{{put-server-name-here}}",
-            "database": "{{put-database-name-here}}",
-            "user": "{{put-username-here}}",
-            "password": "{{put-password-here}}"
-        }
-    ],
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "terminal.integrated.shell.osx": "/Users/eric.au/miniconda3/bin/bash",
     "editor.autoIndent": "none",
     "editor.copyWithSyntaxHighlighting": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.links": false,
     "editor.formatOnSave": true,
-    "editor.fontSize": 12,
-    "terminal.integrated.shell.osx": "bash",
+    "editor.fontSize": 13,
     "explorer.openEditors.visible": 0,
     "breadcrumbs.enabled": false,
     "terminal.integrated.inheritEnv": true,
@@ -35,18 +20,18 @@
         "terminalCursor.background": "#C0C0C0",
         "terminalCursor.foreground": "#C0C0C0",
         "terminal.ansiBlack": "#000000",
-        "terminal.ansiBlue": "#0303f1",
+        "terminal.ansiBlue": "#0e0eff",
         "terminal.ansiBrightBlack": "#808080",
-        "terminal.ansiBrightBlue": "#0000D3",
-        "terminal.ansiBrightCyan": "#02ABEA",
+        "terminal.ansiBrightBlue": "#0e0eff",
+        "terminal.ansiBrightCyan": "#72e1fa",
         "terminal.ansiBrightGreen": "#1FB714",
-        "terminal.ansiBrightMagenta": "#4700A5",
+        "terminal.ansiBrightMagenta": "#72e1fa",
         "terminal.ansiBrightRed": "#c11a18",
         "terminal.ansiBrightWhite": "#FFFFFF",
         "terminal.ansiBrightYellow": "#FBF305",
         "terminal.ansiCyan": "#02ABEA",
         "terminal.ansiGreen": "#1FB714",
-        "terminal.ansiMagenta": "#4700A5",
+        "terminal.ansiMagenta": "#00d0ff",
         "terminal.ansiRed": "#03b129",
         "terminal.ansiWhite": "#C0C0C0",
         "terminal.ansiYellow": "#FBF305"
@@ -61,19 +46,14 @@
     "workbench.editor.focusRecentEditorAfterClose": false,
     "workbench.panel.defaultLocation": "bottom",
     "files.trimTrailingWhitespace": true,
-    "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 100,
     "terminal.integrated.experimentalLinkProvider": false,
     "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 1,
     "workbench.editor.enablePreviewFromCodeNavigation": true,
     "window.openWithoutArgumentsInNewWindow": "on",
     "editor.renderWhitespace": "none",
     "workbench.activityBar.visible": false,
     "editor.minimap.enabled": false,
-    "remote.SSH.enableAzureIntegration": true,
-    "remote.SSH.remoteServerListenOnSocket": true,
-    "remote.SSH.enableAgentForwarding": false,
     "terminal.integrated.automationShell.linux": "",
     "terminal.integrated.automationShell.windows": "",
     "launch": {
@@ -89,7 +69,6 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "settingsSync.ignoredExtensions": [],
     "workbench.settings.openDefaultSettings": true,
-    "debug.javascript.debugByLinkOptions": null,
     "terminal.integrated.macOptionClickForcesSelection": true,
     "terminal.integrated.profiles.linux": {
         "bash": {
@@ -111,4 +90,14 @@
     "terminal.integrated.sendKeybindingsToShell": true,
     "go.toolsManagement.autoUpdate": true,
     "copyOnSelect.copyOnMouseSelection": false,
+    "workbench.colorTheme": "Monokai",
+    "terminal.integrated.enableFileLinks": false,
+    "terminal.integrated.env.linux": {},
+    "diffEditor.codeLens": true,
+    "terminal.integrated.tabs.enabled": false,
+    "window.autoDetectHighContrast": false,
+    "workbench.editor.decorations.colors": false,
+    "terminal.integrated.fontSize": 13,
+    "window.zoomLevel": 1,
+    "security.workspace.trust.untrustedFiles": "open",
 }
