@@ -1,10 +1,9 @@
 {
     "terminal.integrated.shell.osx": "/usr/local/bin/bash",
-    "editor.autoIndent": "none",
+    "editor.autoIndent": "keep",
     "editor.copyWithSyntaxHighlighting": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.links": false,
-    "editor.formatOnSave": true,
     "editor.fontSize": 13,
     "explorer.openEditors.visible": 0,
     "breadcrumbs.enabled": false,
@@ -64,7 +63,6 @@
     "terminal.integrated.env.osx": {},
     "editor.codeLens": false,
     "outline.showStructs": false,
-    "editor.formatOnPaste": true,
     "workbench.settings.openDefaultKeybindings": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "settingsSync.ignoredExtensions": [],
@@ -103,5 +101,5 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
 }
