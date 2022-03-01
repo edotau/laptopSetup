@@ -7,13 +7,13 @@
     "editor.links": false,
     "editor.fontSize": 13,
     "explorer.openEditors.visible": 0,
-    "terminal.integrated.inheritEnv": true,
+    "terminal.integrated.inheritEnv": false,
     "workbench.preferredDarkColorTheme": "Monokai",
     "workbench.preferredLightColorTheme": "Default Dark+",
     "workbench.editor.closeEmptyGroups": false,
     "window.autoDetectColorScheme": true,
     "workbench.colorCustomizations": {
-    
+
         "terminal.background": "#000000",
         "editor.background": "#000000",
         "terminal.foreground": "#C0C0C0",
@@ -36,7 +36,6 @@
         "terminal.ansiWhite": "#C0C0C0",
         "terminal.ansiYellow": "#FBF305"
     },
-    "workbench.editor.centeredLayoutAutoResize": false,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.copyOnSelection": true,
     "copyOnSelect.trimStart": false,
@@ -46,9 +45,8 @@
     "workbench.editor.focusRecentEditorAfterClose": false,
     "files.autoSaveDelay": 100,
     "terminal.integrated.experimentalLinkProvider": false,
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "none",
     "workbench.editor.enablePreviewFromCodeNavigation": true,
-    "window.openWithoutArgumentsInNewWindow": "on",
     "launch": {
         "configurations": [],
         "compounds": []
@@ -83,7 +81,6 @@
     "workbench.colorTheme": "Monokai",
     "terminal.integrated.env.linux": {},
     "diffEditor.codeLens": true,
-    "window.autoDetectHighContrast": false,
     "workbench.editor.decorations.colors": false,
     "terminal.integrated.fontSize": 13,
     "security.workspace.trust.untrustedFiles": "open",
@@ -91,18 +88,13 @@
         "*.ipynb": "jupyter-notebook"
     },
     "window.zoomLevel": 1,
-    "terminal.integrated.enableShellIntegration": true,
     "workbench.editor.revealIfOpen": true,
     "window.newWindowDimensions": "inherit",
-    "editor.autoSurround": "never",
     "editor.renderControlCharacters": false,
     "extensions.autoCheckUpdates": false,
     "terminal.integrated.profiles.osx": {
         "bash": {
             "path": "bash",
-            "args": [
-                "-l"
-            ],
             "icon": "terminal-bash"
         },
         "zsh": {
@@ -126,19 +118,60 @@
             "icon": "terminal-powershell"
         },
         "bash default": {
-            "path": "/usr/local/bin/bash"
+            "path": "/usr/local/bin/bash",
+			"icon": "terminal-bash"
         }
     },
-    "terminal.integrated.defaultProfile.osx": "bash default",
-    "python.terminal.executeInFileDir": true,
-    "vscode-edge-devtools.mirrorEdits": true,
     "terminal.integrated.persistentSessionScrollback": 5000,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "security.workspace.trust.startupPrompt": "never",
     "breadcrumbs.enabled": false,
-    "workbench.editor.autoLockGroups": {},
-    "diffEditor.wordWrap": "on",
+    "editor.insertSpaces": false,
+    "editor.hover.enabled": false,
+    "editor.hover.sticky": false,
+    "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.editor.untitled.labelFormat": "name",
+    "zenMode.centerLayout": false,
+    "cloudcode.enableNewWelcomePage": false,
+    "cloudcode.verboseLogging": true,
+    "emmet.optimizeStylesheetParsing": false,
+    "cloudcode.enableConfigLessExperience": true,
+    "cloudcode.enableMultiSkaffoldConfigsKey": true,
+    "cloudcode.enableTelemetry": false,
+    "cloudcode.minikubeStatusBar": false,
+    "cloudcode.yaml.format.enable": true,
+    "workbench.editor.enablePreview": false,
+    "editor.foldingHighlight": false,
+    "editor.occurrencesHighlight": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.multiCursorPaste": "full",
+    "terminal.integrated.cursorBlinking": true,
+    "window.clickThroughInactive": false,
+    "terminal.integrated.defaultProfile.osx": "bash default",
+    "workbench.editor.centeredLayoutAutoResize": false,
     "terminal.integrated.showLinkHover": false,
+    "terminal.integrated.environmentChangesRelaunch": false,
+    "editor.unusualLineTerminators": "off",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.peekWidgetDefaultFocus": "editor",
+    "workbench.editor.limit.enabled": true,
+    "editor.renderFinalNewline": false,
+    "debug.terminal.clearBeforeReusing": true,
+    "comments.openPanel": "neverOpen",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.confirmOnKill": "panel",
+    "editor.padding.top": 1,
+    "editor.padding.bottom": 1,
+    "vscode-edge-devtools.mirrorEdits": true,
+    "terminal.integrated.defaultLocation": "editor",
+    "editor.accessibilitySupport": "off",
+    "cSpell.userWords": [
+        "curr",
+        "Nextra",
+        "simpleio"
+    ],
 }
-
 
