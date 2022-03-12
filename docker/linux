@@ -1,0 +1,17 @@
+FROM ubuntu:latest
+
+ENV TZ=America/New_York
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -y && apt-get install -y \
+	build-essential \
+	apt-transport-https \
+	gnupg2 pass \
+	git \
+	make \
+	gcc \
+	g++ \
+	python3-setuptools \
+	&& rm -rf /var/lib/apt/lists/*
+
+
