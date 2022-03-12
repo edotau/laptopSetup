@@ -39,7 +39,7 @@ brew update && brew install \
 
 # basic compression utils
 brew update && brew install \
-	gnutar \
+	gnu-tar  \
 	pigz \
 	bzip2 \
 	zip \
