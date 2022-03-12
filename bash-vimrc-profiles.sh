@@ -1,24 +1,34 @@
 #!/bin/bash
 set -e
 
-rm -rf ~/.vim && cp -r .vim ~/.vim/
-
-touch ~/.vimrc && rm ~/.vimrc
-
-echo "syntax enable
-colorscheme monokai
-set tabstop=4
-set shiftwidth=4
-set autoindent
-noremap p gp
-noremap P gP
-noremap gp p
-noremap gP P
-
-autocmd BufNewFile *.go 0r ~/.vim/templates/template.go
-autocmd BufNewFile *.py 0r ~/.vim/templates/template.py
-autocmd BufNewFile *.sh 0r ~/.vim/templates/template.sh
+echo "First: setting up vim profile and color theme ...
 "
 
-cp .vimrc ~/.vimrc
+rm -rf ~/.vim && cp -r linux-resources/vim-resources/ ~/.vim
+
+touch ~/.vimrc && rm ~/.vimrc
+cp linux-resources/vimrc-mac-linux.txt ~/.vimrc
+
+cat ~/.vimrc
+
+echo "Done: vim profile setup complete!
+"
+
+echo "Next: Setting up bash profile and color theme ...
+"
+
+touch ~/.bashrc && rm ~/.bashrc
+cp linux-resources/linux-bashrc.txt ~/.bashrc
+
+cat ~/.bashrc
+
+touch ~/.bash_profile && rm ~/.bash_profile
+cp linux-resources/macos-bash-profile.txt ~/.bash_profile
+
+cat linux-resources/macos-bash-profile.txt
+
+cat ~/.bash_profile
+
+echo "Done: bash_profile and bashrc mac profile setup is complete!
+"
 
