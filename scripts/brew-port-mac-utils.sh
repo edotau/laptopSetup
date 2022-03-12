@@ -1,90 +1,88 @@
 #!/bin/bash
-set -eou pipefail
+set -e
 
-echo | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sudo echo | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew doctor
-
-brew install \
+brew update && brew install \
 	bash \
 	bash-completion \
 	make \
 	cmake \
 	git \
 	git-extras \
-	curl \
-	wget \
-	rsync \
 	golang \
 	golangci-lint \
-	gcc-aarch64-embedded \
+	openjdk \
 	typescript \
 	node \
 	yarn \
 	php \
+	perl \
 	awscli
 
-brew install coreutils \
-	gnutls \
-	less \
-	vim \
-	macvim \
-	gzip \
-	unzip \
-	screen \
-	watch \
-	file-formula \
-	openssh
-
-brew tap hashicorp/tap && brew install hashicorp/tap/terraform
-
-brew install \
-	htslib \
-	samtools \
-	bcftools 
-
-mkdir -p /opt/mports/macports-base && rm /opt/mports/macports-base && \
-	sudo git clone https://github.com/macports/macports-base.git /opt/mports/macports-base && \
-	sudo chown -R ${USER}:admin /opt/mports/macports-base && \
-	cd /opt/mports/macports-base && \
-	git checkout v2.7.2 && \
-	./configure --enable-readline && \
-	make && \
-	make install && \
-	make distclean
-
-sudo xcode-select --install
-
-sudo port -N install \
+# gnu and basic linux utils 
+brew update && brew install \
 	coreutils \
 	gnutls \
 	util-linux \
-	zlib \
-	lzlib \
-	lz4 \
-	lzma \
-	libzip \
-	libidn \
-	libtool \
-	libiconv \
-	glib2 \
+	gcc-aarch64-embedded \
+	curl \
+	wget \
+	rsync \
+	vim \
+	macvim \
+	screen \
+	watch \
+	grep \
+	less \
+	openssh
+
+# basic compression utils
+brew update && brew install \
+	gnutar \
+	pigz \
 	bzip2 \
 	zip \
-	grep \
+	unzip \
+	gzip \
+
+# library support for gnu, gcc, g++, and others
+brew update && brew install \
+	zlib \
+	lzlib \
+	libtool \
+	libiconv \
+	isl \
+	mpc \
+	gdb \
+	glib2 \
+	mpfr \
+	lz4 \
+	lzma \
+	xz \
+	m4 \
+	apt \
+	file-formula \
+	pkg-config \
 	openssl \
 	glib-openssl \
-	flex \
-	swig \
-	file \
-	gettext \
-	m4 \
-	perl \
-	fastjar \
-	openjdk17 \
-	openjdk7-zulu \
-	xxhashlib \
 	boost \
-	boost-jam \
+	boost-mpi \
 	boost-build \
-	asciidoc
+	gettext \
+	asciidoc \
+	help2man \
+	xxhash
+
+# terraform: used to program infrastructure
+brew tap hashicorp/tap && brew install hashicorp/tap/terraform
+
+# Command line program for generating flag code references.
+brew tap launchdarkly/tap && brew install ld-find-code-refs
+#  homebrew/cask/r and conda
+# basic genomic tools to look at sequence data
+brew update && brew install \
+	htslib \
+	samtools \
+	bcftools
 

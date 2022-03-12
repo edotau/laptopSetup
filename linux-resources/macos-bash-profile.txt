@@ -12,20 +12,29 @@ then
     done
   fi
 fi
-
-export BASH_SILENCE_DEPRECATION_WARNING=1
-#alias rmStopDocker="docker rm $(docker ps -a -q)"
-#alias rmALlUntaged="docker rmi $(docker images | grep "^<none>" | awk "{print $3}")"
 export CLICOLOR=1
+export TERM=xterm-256color
+
 export GOROOT=/usr/local/go
 export GOPATH=$HOME
 export GOBIN=${GOPATH}/bin
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-#source "`brew --prefix`/etc/grc.bashrc"
-#test -e ~/.iterm2_shell_integration.bash && source ~/.iterm2_shell_integration.bash || true
-export TERM=xterm-256color
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
+export CFLAGS="-I/usr/local/include"
+export LDFLAGS="-L/usr/local/opt"
 
-alias ram="system_profiler SPHardwareDataType | grep 'Memory:'"
+# export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/local/opt"
+
+# alias ram="system_profiler SPHardwareDataType | grep 'Memory:'"
+# export BASH_SILENCE_DEPRECATION_WARNING=1
+# alias rmStopDocker="docker rm $(docker ps -a -q)"
+# alias rmALlUntaged="docker rmi $(docker images | grep "^<none>" | awk "{print $3}")"
+
+# source "`brew --prefix`/etc/grc.bashrc"
+# test -e ~/.iterm2_shell_integration.bash && source ~/.iterm2_shell_integration.bash || true
 
 
