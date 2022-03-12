@@ -55,7 +55,10 @@ brew update && brew install \
 	isl \
 	mpc \
 	gdb \
-	glib2 \
+	glib \
+	glibc \
+	glibmm \
+	libb2 \
 	mpfr \
 	lz4 \
 	lzma \
