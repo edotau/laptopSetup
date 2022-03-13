@@ -27,16 +27,14 @@ export LDFLAGS="-L/usr/local/opt"
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/local/opt"
 
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+MacOSX=11.2.0
+export PATH=/usr/local/gcc-${MacOSX}/bin:$PATH
 
-# export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+export PATH=$PATH:"~/miniconda3/condabin"
+export PATH=$PATH:"~/miniconda3/bin"
 
 # alias ram="system_profiler SPHardwareDataType | grep 'Memory:'"
 # export BASH_SILENCE_DEPRECATION_WARNING=1
 # alias rmStopDocker="docker rm $(docker ps -a -q)"
 # alias rmALlUntaged="docker rmi $(docker images | grep "^<none>" | awk "{print $3}")"
-
-# source "`brew --prefix`/etc/grc.bashrc"
-# test -e ~/.iterm2_shell_integration.bash && source ~/.iterm2_shell_integration.bash || true
-
 

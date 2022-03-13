@@ -14,8 +14,8 @@ cd /opt/mports/macports-base \
 	&& make -j 10 distclean
 
 port -d selfupdate
-port -N install nodejs16 typescript
-port select --set python python310
+port -N install nodejs16
+# port select --set python python310
 
 mkdir -p /opt/local/lib/node_modules \
 	&& chown -R ${USER}:staff /opt/local/lib/node_modules

@@ -11,6 +11,7 @@ brew update && brew install \
 	git \
 	golang \
 	openjdk \
+	gcc \
 	perl \
 	typescript \
 	r \
