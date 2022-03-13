@@ -24,5 +24,9 @@ echo "Installing MacPorts to manage nodejs and yarn npm-check -u...
 "
 sudo ./scripts/macports-install.sh
 
+echo "Download VS Code: 
+
+https://code.visualstudio.com/download
+"
 # mkdir -p ~/bin/kentUtils
 # rsync -aP rsync://hgdownload.soe.ucsc.edu/genome/admin/exe/macOSX.x86_64/ ~/bin/kentUtils/
