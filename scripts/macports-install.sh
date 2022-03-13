@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -eou pipefail
 
 chown -R ${USER}:staff /opt/mports
 mkdir -p /opt/mports/macports-base && rm -r /opt/mports/macports-base

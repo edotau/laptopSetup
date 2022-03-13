@@ -12,10 +12,9 @@ brew update && brew install \
 	golang \
 	openjdk \
 	perl \
-	miniconda \
 	typescript \
 	r \
-	php
+	php \
 	awscli
 
 # gnu and basic linux utils 
@@ -49,6 +48,8 @@ brew update && brew install \
 	libtool \
 	libiconv
 
+softwareupdate --all --install --force
+
 # terraform: used to program infrastructure
 brew tap hashicorp/tap && brew install hashicorp/tap/terraform
 
@@ -69,11 +70,3 @@ brew update && brew install \
 	git-extras \
 	golangci-lint
 
-sudo chown -R ${USER}:admin /opt/mports
-mkdir -p /opt/mports/macports-base && rm -r /opt/mports/macports-base
-git clone https://github.com/macports/macports-base.git /opt/mports/macports-base
-cd /opt/mports/macports-base && git checkout v2.7.2 
-./configure --enable-readline \
-	&& make -j 10 \
-	&& make -j 10 install \
-	&& make -j 10 distclean
