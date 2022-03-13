@@ -6,4 +6,5 @@ channels:
   - default
 
 dependencies:
-  
+  - gcc=11.2
+  - python=3.7
