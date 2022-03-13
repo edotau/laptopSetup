@@ -48,8 +48,6 @@ brew update && brew install \
 	libtool \
 	libiconv
 
-softwareupdate --all --install --force
-
 # terraform: used to program infrastructure
 brew tap hashicorp/tap && brew install hashicorp/tap/terraform
 
@@ -61,9 +59,9 @@ brew update && brew install \
 
 # Linux bin utils
 brew update && brew install \
-	arm-linux-gnueabihf-binutils \
 	binutils \
-	util-linux
+	util-linux \
+	arm-linux-gnueabihf-binutils
 
 # exta pkg that might be useful but also might delete
 brew update && brew install \
