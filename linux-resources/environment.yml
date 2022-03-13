@@ -1,4 +1,4 @@
-name: conda-env
+name: base
 
 channels:
   - conda-forge
@@ -6,3 +6,4 @@ channels:
   - default
 
 dependencies:
+  
