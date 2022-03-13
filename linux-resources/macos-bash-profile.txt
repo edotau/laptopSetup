@@ -25,9 +25,10 @@ export CXX=/usr/bin/g++
 export CFLAGS="-I/usr/local/include"
 export LDFLAGS="-L/usr/local/opt"
 
-# export CPPFLAGS="-I/usr/local/opt/openjdk/include"
-
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/local/opt"
+
+
+# export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 
 # alias ram="system_profiler SPHardwareDataType | grep 'Memory:'"
 # export BASH_SILENCE_DEPRECATION_WARNING=1

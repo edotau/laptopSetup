@@ -9,23 +9,19 @@ brew update && brew install \
 	make \
 	cmake \
 	git \
-	git-extras \
 	golang \
-	golangci-lint \
 	openjdk \
-	typescript \
-	node \
-	yarn \
-	php \
 	perl \
+	miniconda \
+	typescript \
+	r \
+	php
 	awscli
 
 # gnu and basic linux utils 
 brew update && brew install \
 	coreutils \
 	gnutls \
-	util-linux \
-	gcc-aarch64-embedded \
 	curl \
 	wget \
 	rsync \
@@ -39,53 +35,45 @@ brew update && brew install \
 
 # basic compression utils
 brew update && brew install \
-	gnu-tar  \
+	gnu-tar \
 	pigz \
 	bzip2 \
 	zip \
-	unzip \
 	gzip \
+	unzip
 
 # library support for gnu, gcc, g++, and others
 brew update && brew install \
 	zlib \
 	lzlib \
 	libtool \
-	libiconv \
-	isl \
-	mpc \
-	gdb \
-	glib \
-	glibc \
-	glibmm \
-	libb2 \
-	mpfr \
-	lz4 \
-	lzma \
-	xz \
-	m4 \
-	apt \
-	file-formula \
-	pkg-config \
-	openssl \
-	glib-openssl \
-	boost \
-	boost-mpi \
-	boost-build \
-	gettext \
-	asciidoc \
-	help2man \
-	xxhash
+	libiconv
 
 # terraform: used to program infrastructure
 brew tap hashicorp/tap && brew install hashicorp/tap/terraform
 
-# Command line program for generating flag code references.
-brew tap launchdarkly/tap && brew install ld-find-code-refs
-#  homebrew/cask/r and conda
 # basic genomic tools to look at sequence data
 brew update && brew install \
 	htslib \
 	samtools \
 	bcftools
 
+# Linux bin utils
+brew update && brew install \
+	arm-linux-gnueabihf-binutils \
+	binutils \
+	util-linux
+
+# exta pkg that might be useful but also might delete
+brew update && brew install \
+	git-extras \
+	golangci-lint
+
+sudo chown -R ${USER}:admin /opt/mports
+mkdir -p /opt/mports/macports-base && rm -r /opt/mports/macports-base
+git clone https://github.com/macports/macports-base.git /opt/mports/macports-base
+cd /opt/mports/macports-base && git checkout v2.7.2 
+./configure --enable-readline \
+	&& make -j 10 \
+	&& make -j 10 install \
+	&& make -j 10 distclean
