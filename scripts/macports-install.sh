@@ -9,14 +9,14 @@ cd /opt/mports/macports-base \
 	&& git checkout v2.7.2 
 
 ./configure --enable-readline \
-	&& make -j 10 \
-	&& make -j 10 install \
-	&& make -j 10 distclean
+	&& make -j $(nproc) \
+	&& make -j $(nproc) install \
+	&& make -j $(nproc) distclean
 
-port -d selfupdate
-# port -N install nodejs16
+export PATH=/opt/local/bin:$PATH
 
-# port -d selfupdate && port upgrade outdated
+port -d selfupdate && port upgrade outdated
+
 # # port select --set python python310
 
 # mkdir -p /opt/local/lib/node_modules \

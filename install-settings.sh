@@ -32,5 +32,11 @@ echo "Download VS Code:
 https://code.visualstudio.com/download
 
 "
+
+echo "Download NodeJS:
+
+https://nodejs.org/dist/v16.14.1/node-v16.14.1.pkg
+
+"
 # mkdir -p ~/bin/kentUtils
 # rsync -aP rsync://hgdownload.soe.ucsc.edu/genome/admin/exe/macOSX.x86_64/ ~/bin/kentUtils/

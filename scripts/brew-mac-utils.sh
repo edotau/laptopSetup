@@ -65,7 +65,7 @@ brew update && brew install \
 	arm-linux-gnueabihf-binutils
 
 # exta pkg that might be useful but also might delete
-brew update && brew install \
-	git-extras \
-	golangci-lint
+# brew update && brew install \
+# 	git-extras \
+# 	golangci-lint
 

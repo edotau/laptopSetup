@@ -20,19 +20,18 @@ export GOPATH=$HOME
 export GOBIN=${GOPATH}/bin
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-export CC=/usr/bin/gcc
-export CXX=/usr/bin/g++
+export CC=/usr/bin/gcc-11
+export CXX=/usr/bin/g++-11
 export CFLAGS="-I/usr/local/include"
-export LDFLAGS="-L/usr/local/opt"
+export LDFLAGS="-L/usr/local/lib"
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/local/opt"
+alias gcc=$CC
+alias g++=$CXX
 
-MacOSX=11.2.0
-export PATH=/usr/local/gcc-${MacOSX}/bin:$PATH
+# conda init "$(basename "${SHELL}")"
+# conda deactivate
 
-export PATH=$PATH:"~/miniconda3/condabin"
-export PATH=$PATH:"~/miniconda3/bin"
-
+export PATH=$PATH:/opt/local/bin
 # alias ram="system_profiler SPHardwareDataType | grep 'Memory:'"
 # export BASH_SILENCE_DEPRECATION_WARNING=1
 # alias rmStopDocker="docker rm $(docker ps -a -q)"
