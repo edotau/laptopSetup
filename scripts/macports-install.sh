@@ -14,12 +14,14 @@ cd /opt/mports/macports-base \
 	&& make -j 10 distclean
 
 port -d selfupdate
-port -N install nodejs16
-# port select --set python python310
+# port -N install nodejs16
 
-mkdir -p /opt/local/lib/node_modules \
-	&& chown -R ${USER}:staff /opt/local/lib/node_modules
+# port -d selfupdate && port upgrade outdated
+# # port select --set python python310
 
-npm install -y yarn
-npm install -y create-react-app
+# mkdir -p /opt/local/lib/node_modules \
+# 	&& chown -R ${USER}:staff /opt/local/lib/node_modules
+
+# npm install -y yarn
+# npm install -y create-react-app
 
