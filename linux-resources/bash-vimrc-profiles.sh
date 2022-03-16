@@ -28,6 +28,7 @@ cp linux-resources/macos-bash-profile.sh ~/.bash_profile
 cat ~/.bash_profile
 
 source ~/.bashrc
+
 echo "Done: bash_profile and bashrc mac profile setup is complete!
 "
 

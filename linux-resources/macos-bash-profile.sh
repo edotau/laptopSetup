@@ -20,8 +20,8 @@ export GOPATH=$HOME
 export GOBIN=${GOPATH}/bin
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-export CC=/usr/bin/gcc-11
-export CXX=/usr/bin/g++-11
+export CC=/usr/local/bin/gcc-11
+export CXX=/usr/local/bin/g++-11
 export CFLAGS="-I/usr/local/include"
 export LDFLAGS="-L/usr/local/lib"
 
