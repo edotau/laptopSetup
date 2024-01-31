@@ -1,25 +1,19 @@
 {
-    "editor.autoIndent": "keep",
-    "go.gopath": "/Users/eric.au",
-    "go.goroot": "/usr/local/go",
+    "editor.formatOnPaste": true,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "terminal.integrated.scrollback": 10000,
     "editor.links": false,
     "editor.fontSize": 13,
-    "explorer.openEditors.visible": 0,
-    "terminal.integrated.inheritEnv": true,
-    "workbench.preferredDarkColorTheme": "Monokai",
-    "workbench.preferredLightColorTheme": "Default Dark+",
+    "editor.formatOnPaste": true,
+    "explorer.openEditors.visible": 1,
+    "terminal.integrated.inheritEnv": false,
     "workbench.editor.closeEmptyGroups": false,
-    "window.autoDetectColorScheme": true,
     "workbench.colorCustomizations": {
-    
-        "terminal.background": "#000000",
-        "editor.background": "#000000",
+        "terminal.background": "#300a24",
+        "editor.background": "#300a24",
         "terminal.foreground": "#C0C0C0",
         "terminalCursor.background": "#C0C0C0",
         "terminalCursor.foreground": "#C0C0C0",
-        "terminal.ansiBlack": "#00000",
         "terminal.ansiBlue": "#0b61e2",
         "terminal.ansiBrightBlack": "#808080",
         "terminal.ansiBrightBlue": "#0b61e2",
@@ -36,24 +30,12 @@
         "terminal.ansiWhite": "#C0C0C0",
         "terminal.ansiYellow": "#FBF305"
     },
-    "workbench.editor.centeredLayoutAutoResize": false,
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.copyOnSelection": true,
-    "copyOnSelect.trimStart": false,
-    // Should trim the end of the copied text?
-    "copyOnSelect.trimEnd": false,
-    "workbench.editor.openPositioning": "left",
     "workbench.editor.focusRecentEditorAfterClose": false,
     "files.autoSaveDelay": 100,
-    "terminal.integrated.experimentalLinkProvider": false,
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "none",
     "workbench.editor.enablePreviewFromCodeNavigation": true,
-    "window.openWithoutArgumentsInNewWindow": "on",
-    "launch": {
-        "configurations": [],
-        "compounds": []
-    },
-    "editor.codeLens": false,
     "outline.showStructs": false,
     "workbench.settings.openDefaultKeybindings": true,
     "editor.multiCursorModifier": "ctrlCmd",
@@ -61,49 +43,49 @@
     "workbench.settings.openDefaultSettings": true,
     "terminal.integrated.macOptionClickForcesSelection": true,
     "terminal.integrated.profiles.linux": {
-
         "bash": {
-            "path": "bash"
+            "path": "bash",
+            "icon": "terminal-bash",
+            "args": [
+                "-l"
+            ]
         },
         "zsh": {
-            "path": "zsh"
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
         },
         "fish": {
             "path": "fish"
         },
         "tmux": {
-            "path": "tmux"
+            "path": "tmux",
+            "icon": "terminal-tmux",
+            "args": [
+                "-l"
+            ]
         },
         "pwsh": {
             "path": "pwsh"
         }
     },
     "terminal.integrated.sendKeybindingsToShell": true,
-    "go.toolsManagement.autoUpdate": true,
-    "workbench.colorTheme": "Monokai",
     "terminal.integrated.env.linux": {},
     "diffEditor.codeLens": true,
-    "window.autoDetectHighContrast": false,
-    "workbench.editor.decorations.colors": false,
     "terminal.integrated.fontSize": 13,
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-    "window.zoomLevel": 1,
-    "terminal.integrated.enableShellIntegration": true,
-    "workbench.editor.revealIfOpen": true,
-    "window.newWindowDimensions": "inherit",
-    "editor.autoSurround": "never",
-    "editor.renderControlCharacters": false,
     "extensions.autoCheckUpdates": false,
     "terminal.integrated.profiles.osx": {
         "bash": {
             "path": "bash",
+            "icon": "terminal-bash",
             "args": [
                 "-l"
-            ],
-            "icon": "terminal-bash"
+            ]
         },
         "zsh": {
             "path": "zsh",
@@ -119,26 +101,131 @@
         },
         "tmux": {
             "path": "tmux",
-            "icon": "terminal-tmux"
+            "icon": "terminal-tmux",
+            "args": [
+                "-l"
+            ]
         },
         "pwsh": {
             "path": "pwsh",
             "icon": "terminal-powershell"
         },
         "bash default": {
-            "path": "/usr/local/bin/bash"
+            "path": "/usr/local/bin/bash",
+			"icon": "terminal-bash",
+            "args": [
+                "-l"
+            ]
         }
     },
-    "terminal.integrated.defaultProfile.osx": "bash default",
-    "python.terminal.executeInFileDir": true,
-    "vscode-edge-devtools.mirrorEdits": true,
     "terminal.integrated.persistentSessionScrollback": 5000,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "security.workspace.trust.startupPrompt": "never",
     "breadcrumbs.enabled": false,
-    "workbench.editor.autoLockGroups": {},
-    "diffEditor.wordWrap": "on",
+    "editor.hover.enabled": false,
+    "editor.hover.sticky": false,
+    "workbench.editor.showTabs": "multiple",
+    "workbench.editor.tabSizing": "fit",
+    "workbench.editor.untitled.labelFormat": "long",
+    "zenMode.centerLayout": false,
+    "emmet.optimizeStylesheetParsing": false,
+    "editor.foldingHighlight": false,
+    "editor.occurrencesHighlight": "off",
+    "editor.renderLineHighlight": "gutter",
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.multiCursorPaste": "full",
+    "terminal.integrated.cursorBlinking": true,
+    "window.clickThroughInactive": false,
+    "terminal.integrated.defaultProfile.osx": "bash -l",
+    "workbench.editor.centeredLayoutAutoResize": false,
     "terminal.integrated.showLinkHover": false,
+    "terminal.integrated.environmentChangesRelaunch": false,
+    "editor.unusualLineTerminators": "off",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.peekWidgetDefaultFocus": "editor",
+    "workbench.editor.limit.enabled": true,
+    "editor.renderFinalNewline": "off",
+    "debug.terminal.clearBeforeReusing": true,
+    "comments.openPanel": "neverOpen",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.confirmOnKill": "panel",
+    "editor.padding.top": 1,
+    "editor.padding.bottom": 1,
+    "terminal.integrated.defaultLocation": "editor",
+    "editor.accessibilitySupport": "off",
+    "workbench.preferredHighContrastColorTheme": "Ubuntu Color Theme",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.tabSize": 4,
+    "terminal.integrated.enablePersistentSessions": false,
+    "cSpell.enabled": false,
+    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": false,
+    "diffEditor.renderSideBySide": false,
+    "workbench.editor.decorations.colors": false,
+    "window.autoDetectColorScheme": true,
+    "editor.renderControlCharacters": false,
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "yaml.schemas": {
+        "file:///Users/edotau/.vscode/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i",
+        "file:///Users/edotau/.vscode/extensions/atlassian.atlascode-3.0.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "remote.portsAttributes": {
+        "443": {
+            "protocol": "https"
+        },
+        "8443": {
+            "protocol": "https"
+        }
+    },
+    "githubPullRequests.fileListLayout": "flat",
+    "atlascode.jira.enabled": true,
+    "atlascode.bitbucket.enabled": false,
+    "extensions.experimental.affinity": {
+        "ms-toolsai.jupyter": 1,
+        "ms-toolsai.jupyter-renderers": 1,
+        "ms-python.python": 1,
+        "ms-python.vscode-pylance": 1
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "atlascode.jira.explorer.enabled": false,
+    "atlascode.jira.hover.enabled": true,
+    "atlascode.jira.explorer.fetchAllQueryResults": true,
+    "editor.inlineSuggest.enabled": true,
+    "workbench.editor.enablePreview": false,
+    "git.autofetch": true,
+    "workbench.editor.empty.hint": "hidden",
+    "vscode-edge-devtools.webhintInstallNotification": true,
+    "workbench.colorTheme": "Monokai"
 }
-
-
